@@ -11,6 +11,8 @@ function displayAge() {
     var input = document.getElementById()
 }
 
+var button3 = document.getElementById('GetDays');
+
 function daysTillBirthday() {
     var today = new Date();
     var days = Math.floor((birthdate.getTime() - today.getTime()) / 86400000); //round down to the nearest day
