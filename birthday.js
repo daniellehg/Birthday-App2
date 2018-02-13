@@ -11,7 +11,6 @@ function displayAge() {
     var input = document.getElementById()
 }
 
-<<<<<<< HEAD
 function daysTillBirthday() {
     var today = new Date();
     var days = Math.floor((birthdate.getTime() - today.getTime()) / 86400000); //round down to the nearest day
@@ -28,7 +27,7 @@ function displayDays() {
 
 }
 button1.addEventListener('click',display);
-=======
+
 
 var button2 = document.getElementById('GetMySign');
 
@@ -71,4 +70,4 @@ this.getSign = function () {
 
 function display getSign =
 
->>>>>>> origin/master
+
