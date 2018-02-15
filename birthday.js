@@ -11,6 +11,25 @@ function displayAge() {
     var input = document.getElementById()
 }
 
+var button3 = document.getElementById('GetDays');
+
+function daysTillBirthday() {
+    var today = new Date();
+    var days = Math.floor((birthdate.getTime() - today.getTime()) / 86400000); //round down to the nearest day
+    var month = Math.floor((birthdate.getTime() - today.getTime()) / 2.628e+9);
+    var hour = Math.floor((birthdate.getTime() - today.getTime()) / 3.6e+6);
+    var minute = Math.floor((birthdate.getTime() - today.getTime()) / 60000);
+
+}
+
+function displayDays() {
+    var input = document.getElementById('input').value;
+    var result = Birthday(input);
+    document.getElementById('daysTillBirthday').textContent = "There are ", month, " Months, ", days, " Days, ", hour, " hours and ", minute, " minutes until summer!";
+
+}
+button1.addEventListener('click',display);
+
 
 var button2 = document.getElementById('GetMySign');
 
@@ -52,4 +71,5 @@ this.getSign = function () {
 
 
 function display getSign =
+
 
