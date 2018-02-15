@@ -11,11 +11,15 @@ function displayAge() {
     var input = document.getElementById()
 }
 
-var button3 = document.getElementById('GetDays');
+var button3 = document.getElementById('getDays');
 
-function daysTillBirthday() {
+function numberOfdaysUnitlBirthday() {
+    var input = document.getElementById('birthdate').value
+
+    var birthdate = new Date(input);
     var today = new Date();
     var days = Math.floor((birthdate.getTime() - today.getTime()) / 86400000); //round down to the nearest day
+<<<<<<< HEAD
     var month = Math.floor((birthdate.getTime() - today.getTime()) / 2.628e+9);
     var hour = Math.floor((birthdate.getTime() - today.getTime()) / 3.6e+6);
     var minute = Math.floor((birthdate.getTime() - today.getTime()) / 60000);
@@ -28,9 +32,13 @@ function displayDays() {
     // var input = document.getElementById('birthdate').value;
     //  var result = daysTillBirthday(input);
     document.getElementById('Days').textContent = "hi";
-
+=======
+    document.getElementById('days').textContent = "Number of days until your birthday: " + days;
 }
-button3.addEventListener('click', displayDays);
+
+>>>>>>> origin/master
+
+button3.addEventListener('click', numberOfdaysUnitlBirthday);
 
 var button2 = document.getElementById('GetMySign');
 
