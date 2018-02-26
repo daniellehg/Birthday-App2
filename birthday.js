@@ -19,7 +19,8 @@ function numberOfdaysUnitlBirthday() {
     var birthdate = new Date(input);
     var today = new Date();
     var days = Math.floor((birthdate.getTime() - today.getTime()) / 86400000); //round down to the nearest day
-<<<<<<< HEAD
+    <<
+    << << < HEAD
     var month = Math.floor((birthdate.getTime() - today.getTime()) / 2.628e+9);
     var hour = Math.floor((birthdate.getTime() - today.getTime()) / 3.6e+6);
     var minute = Math.floor((birthdate.getTime() - today.getTime()) / 60000);
@@ -31,12 +32,13 @@ function numberOfdaysUnitlBirthday() {
 function displayDays() {
     // var input = document.getElementById('birthdate').value;
     //  var result = daysTillBirthday(input);
-    document.getElementById('Days').textContent = "hi";
-=======
+    document.getElementById('Days').textContent = "hi"; ===
+    === =
     document.getElementById('days').textContent = "Number of days until your birthday: " + days;
 }
 
->>>>>>> origin/master
+>>>
+>>> > origin / master
 
 button3.addEventListener('click', numberOfdaysUnitlBirthday);
 
@@ -81,9 +83,30 @@ function getSign() {
 
 function display getSign() {
 
-    var input = document.getElementById
+    var input = document.getElementById('inputNumber').value;
     var result = getSign(input);
-if (resutlt == )
+    if (resutlt == "Capricorn") {
+
+        document.getElementById('sign').textContent = "Your zodiac sign is Capricorn";
+    } else if (result == "Aquarius") {
+        document.getElementById('sign').textContent = "Your zodic sign is Aquarius";
+    } else if (result == "Pisces") {
+        document.getElementById('sign').textContent = "Your zodic sign is Pisces";
+    } else if (result == "Aries") {
+        document.getElementById('sign').textContent = "Your zodic sign is Aries";
+    } else if (result == "Taurus"){
+        document.getElementById('sign').textContent = "Your zodic sign is Taurus"
+
+    } else if (result == "Gemini"){
+        document.getElementById('sign').textContent = "Your zodic sign is Gemini";
+    } else if (result == "Cancer"){
+        document.getElementById('sign').textContent = "Your zodic sign is Cancer";
+    } else if (result == "Leo"){
+        document.getElementById('sign').textContent = "Your zodic sign is Leo";
+    } else if (result == "Virgo"){
+        document.getElementById('sign').textContent = "Your zodic sign is Virgo"
+    }
+
 
 
 
