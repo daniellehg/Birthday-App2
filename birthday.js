@@ -1,15 +1,3 @@
-var button1 = document.getElementById('GetMyAge');
-
-function Birthday() {
-    this.birthdate = new Date(birthdate);
-    var current = new Date()
-    age = Math.round((current - this.birthdate) / 31536000000)
-    return age
-}
-
-function displayAge() {
-    var input = document.getElementById()
-}
 
 var button3 = document.getElementById('getDays');
 
@@ -19,8 +7,12 @@ function numberOfdaysUnitlBirthday() {
     var birthdate = new Date(input);
     var today = new Date();
     var days = Math.floor((birthdate.getTime() - today.getTime()) / 86400000); //round down to the nearest day
+<<<<<<< HEAD
     <<
     << << < HEAD
+=======
+
+>>>>>>> origin/master
     var month = Math.floor((birthdate.getTime() - today.getTime()) / 2.628e+9);
     var hour = Math.floor((birthdate.getTime() - today.getTime()) / 3.6e+6);
     var minute = Math.floor((birthdate.getTime() - today.getTime()) / 60000);
@@ -32,6 +24,7 @@ function numberOfdaysUnitlBirthday() {
 function displayDays() {
     // var input = document.getElementById('birthdate').value;
     //  var result = daysTillBirthday(input);
+<<<<<<< HEAD
     document.getElementById('Days').textContent = "hi"; ===
     === =
     document.getElementById('days').textContent = "Number of days until your birthday: " + days;
@@ -39,6 +32,14 @@ function displayDays() {
 
 >>>
 >>> > origin / master
+=======
+    document.getElementById('Days').textContent = "hi";
+
+    document.getElementById('days').textContent = "Number of days until your birthday: " + days;
+}
+
+
+>>>>>>> origin/master
 
 button3.addEventListener('click', numberOfdaysUnitlBirthday);
 
@@ -116,3 +117,4 @@ function display getSign() {
 
 
 }
+
