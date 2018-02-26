@@ -1,15 +1,18 @@
 
 var button3 = document.getElementById('getDays');
 
-function numberOfdaysUnitlBirthday() {
+function numberOfDaysUnitlBirthday() {
     var input = document.getElementById('birthdate').value
 
     var birthdate = new Date(input);
     var today = new Date();
     var days = Math.floor((birthdate.getTime() - today.getTime()) / 86400000); //round down to the nearest day
 <<<<<<< HEAD
+<<<<<<< HEAD
     <<
     << << < HEAD
+=======
+>>>>>>> origin/master
 =======
 
 >>>>>>> origin/master
@@ -22,6 +25,13 @@ function numberOfdaysUnitlBirthday() {
 }
 
 function displayDays() {
+<<<<<<< HEAD
+    var input = document.getElementById('birthdate').value;
+    var result = numberOfDaysUnitlBirthday();
+    document.getElementById('days').textContent = "Number of days until your birthday: " + days;
+}
+
+=======
     // var input = document.getElementById('birthdate').value;
     //  var result = daysTillBirthday(input);
 <<<<<<< HEAD
@@ -41,6 +51,7 @@ function displayDays() {
 
 >>>>>>> origin/master
 
+>>>>>>> origin/master
 button3.addEventListener('click', numberOfdaysUnitlBirthday);
 
 var button2 = document.getElementById('GetMySign');
@@ -86,6 +97,7 @@ function display getSign() {
 
     var input = document.getElementById('inputNumber').value;
     var result = getSign(input);
+<<<<<<< HEAD
     if (resutlt == "Capricorn") {
 
         document.getElementById('sign').textContent = "Your zodiac sign is Capricorn";
@@ -108,6 +120,9 @@ function display getSign() {
         document.getElementById('sign').textContent = "Your zodic sign is Virgo"
     }
 
+=======
+    if (resutlt == )
+>>>>>>> origin/master
 
 
 
