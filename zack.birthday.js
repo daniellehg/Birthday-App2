@@ -15,7 +15,7 @@ function checkFormat() {
     var format = document.getElementById("inputDate").value;
     var check1 = format.substring(2, 3);
     var check2 = format.substring(5, 6);
-    if ((check1 == "/") && (check2 == "/")) {
+    if ((check1 == "/") && (check2 == "/") && (format.length == 10)) {
         return getAge();
 
     } else {
