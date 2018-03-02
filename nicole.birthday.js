@@ -1,9 +1,9 @@
-var button2 = document.getElementById('findSign');
+var button2 = document.getElementById('findAge');
 
 function getSign() {
-    birthday = document.getElementById('inputDate').value,
-        birth = new Date(birthday),
-        var month = birth.getMonth() + 1;
+    birthday = document.getElementById('inputDate').value;
+    birth = new Date(birthday);
+    var month = birth.getMonth();
     var day = birth.getDay();
     var zodiac = "";
 
@@ -32,14 +32,8 @@ function getSign() {
     } else if ((month() === 11 && day() > 21) || (month() === 0 && day() < 20)) {
         return "Capricorn";
     }
-}
-}
 
-
-
-function display getSign() {
-    var result = getSign();
-    document.getElementById('findSign').textContent = zodiac;
+    document.getElementById('Sign').textContent = "Your zodiac sign is" + zodiac;
 }
 
 /*    if (resutlt == "Capricorn") {
@@ -69,4 +63,4 @@ function display getSign() {
     } else if (result == "Sagittarius") {
         document.getElementById('sign').textContent = "Your zodic sign is Sagittarius";
     } */
-button.addEventListener('click', displayGetSign);
+button.addEventListener('click', getSign);

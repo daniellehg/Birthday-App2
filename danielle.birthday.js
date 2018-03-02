@@ -1,4 +1,4 @@
- var button3 = document.getElementById('getDays');
+ var button3 = document.getElementById('findAge');
 
  function numberOfdaysUnitlBirthday() {
      var input = document.getElementById('inputDate').value
