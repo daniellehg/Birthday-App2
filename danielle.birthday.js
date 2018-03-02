@@ -7,8 +7,8 @@
      if ((today.getTime() - birthdate.getTime()) > 0) {
          birthdate.setFullYear(today.getFullYear());
      }
-         else if ((today.getTime() - birthdate.getTime()) < 0){
-             birthdate.setFullYear(birthdate.getFullYear() + 1);
+         else {
+             birthdate.setFullYear(today.getFullYear() + 1);
  }
  var days = Math.floor((birthdate.getTime() / 86400000) - (today.getTime() / 86400000)); //round down to the nearest day
  document.getElementById('days').textContent = "Number of days until your birthday: " + days;
