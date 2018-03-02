@@ -1,4 +1,4 @@
-var button1 = document.getElementById('findAge');
+var button1 = document.getElementById('excavate');
 button1.addEventListener('click', () => {
     document.getElementById('output').textContent = checkFormat()
 });
