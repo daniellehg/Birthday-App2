@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var button = document.getElementById('getSign');
 
 
@@ -37,7 +37,7 @@ function getSign(birthday) {
     }
 document.getElementById('day').textContent = getSign
 button2.addEventListener('click', getSign);
-=======
+
 var button2 = document.getElementById('findAge');
 
 function getSign() {
@@ -72,14 +72,14 @@ function getSign() {
     } else if ((month() === 11 && day() > 21) || (month() === 0 && day() < 20)) {
         return "Capricorn";
     }
->>>>>>> origin/master
+
 
     document.getElementById('Sign').textContent = "Your zodiac sign is" + zodiac;
 }
 
-<<<<<<< HEAD
 
-=======
+
+
 /*    if (resutlt == "Capricorn") {
 
         document.getElementById('sign').textContent = "Your zodiac sign is Capricorn";
@@ -108,4 +108,4 @@ function getSign() {
         document.getElementById('sign').textContent = "Your zodic sign is Sagittarius";
     } */
 button.addEventListener('click', getSign);
->>>>>>> origin/master
+
