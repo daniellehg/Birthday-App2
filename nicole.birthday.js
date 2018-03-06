@@ -1,10 +1,10 @@
 
-var button = document.getElementById('getSign');
+var button = document.getElementById('findAge');
 
 
-function getSign(birthday) {
+/*function getSign() {
     var birthday = new Date(birthday);
-    var month =birthday.getMonth() + 1;
+    var month = birthday.getMonth() + 1;
     var day = birthday.getDay();
 
 
@@ -37,8 +37,8 @@ function getSign(birthday) {
     }
 document.getElementById('day').textContent = getSign
 button2.addEventListener('click', getSign);
-
-var button2 = document.getElementById('findAge');
+*/
+//var button2 = document.getElementById('findAge');
 
 function getSign() {
     birthday = document.getElementById('inputDate').value;
@@ -48,33 +48,33 @@ function getSign() {
     var zodiac = "";
 
     if ((month() === 0 && day() > 19) || (month === 1 && day < 19)) {
-        return "Aquarius";
+        zodiac = "Aquarius";
     } else if ((month() === 1 && day() > 18) || (month() === 2 && day() < 21)) {
-        return "Pisces";
+        zodiac = "Pisces";
     } else if ((month() === 2 && day() > 20) || (month() === 3 && day() < 20)) {
-        return "Aries";
+        zodiac = "Aries";
     } else if ((month() === 3 && day() > 19) || (month() === 4 && day() < 21)) {
-        return "Taurus";
+        zodiac = "Taurus";
     } else if ((month() === 4 && day() > 20) || (month() === 5 && day() < 21)) {
-        return "Gemini";
+        zodiac = "Gemini";
     } else if ((month() === 5 && day() > 20) || (month() === 6 && day() < 23)) {
-        return "Cancer";
+        zodiac = "Cancer";
     } else if ((month() === 6 && day() > 22) || (month() === 7 && day() < 23)) {
-        return "Leo";
+        zodiac = "Leo";
     } else if ((month() === 7 && day() > 22) || (month() === 8 && day() < 23)) {
-        return "Virgo";
+        zodiac = "Virgo";
     } else if ((month() === 8 && day() > 22) || (month() === 9 && day() < 23)) {
-        return "Libra";
+        zodiac = "Libra";
     } else if ((month() === 9 && day() > 22) || (month() === 10 && day() < 22)) {
-        return "Scorpio";
+        zodiac = "Scorpio";
     } else if ((month() === 10 && day() > 21) || (month() === 11 && day() < 22)) {
-        return "Sagittarius";
+        zodiac = "Sagittarius";
     } else if ((month() === 11 && day() > 21) || (month() === 0 && day() < 20)) {
-        return "Capricorn";
+        zodiac = "Capricorn";
     }
 
-
-    document.getElementById('Sign').textContent = "Your zodiac sign is" + zodiac;
+return zodiac;
+   /* document.getElementById('Sign').textContent = "Your zodiac sign is" + zodiac; */
 }
 
 
