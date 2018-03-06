@@ -1,72 +1,41 @@
-var button2 = document.getElementById('GetMySign');
-
-function getSign() {
-    var birth = new Date(birthday);
-    var month = birth.getMonth() + 1;
-    var day = birth.getDay();
+var button = document.getElementById('getSign');
 
 
-    this.getSign = function () {
-        var sign = new Date(birthDate);
-        if ((sign.getMonth() === 0 && sign.getDate() > 19) || (sign.getMonth === 1 && sign.getDate < 19)) {
-            return "Aquarius";
-        } else if ((sign.getMonth() === 1 && sign.getDate() > 18) || (sign.getMonth() === 2 && sign.getDate() < 21)) {
-            return "Pisces";
-        } else if ((sign.getMonth() === 2 && sign.getDate() > 20) || (sign.getMonth() === 3 && sign.getDate() < 20)) {
-            return "Aries";
-        } else if ((sign.getMonth() === 3 && sign.getDate() > 19) || (sign.getMonth() === 4 && sign.getDate() < 21)) {
-            return "Taurus";
-        } else if ((sign.getMonth() === 4 && sign.getDate() > 20) || (sign.getMonth() === 5 && sign.getDate() < 21)) {
-            return "Gemini";
-        } else if ((sign.getMonth() === 5 && sign.getDate() > 20) || (sign.getMonth() === 6 && sign.getDate() < 23)) {
-            return "Cancer";
-        } else if ((sign.getMonth() === 6 && sign.getDate() > 22) || (sign.getMonth() === 7 && sign.getDate() < 23)) {
-            return "Leo";
-        } else if ((sign.getMonth() === 7 && sign.getDate() > 22) || (sign.getMonth() === 8 && sign.getDate() < 23)) {
-            return "Virgo";
-        } else if ((sign.getMonth() === 8 && sign.getDate() > 22) || (sign.getMonth() === 9 && sign.getDate() < 23)) {
-            return "Libra";
-        } else if ((sign.getMonth() === 9 && sign.getDate() > 22) || (sign.getMonth() === 10 && sign.getDate() < 22)) {
-            return "Scorpio";
-        } else if ((sign.getMonth() === 10 && sign.getDate() > 21) || (sign.getMonth() === 11 && sign.getDate() < 22)) {
-            return "Sagittarius";
-        } else if ((sign.getMonth() === 11 && sign.getDate() > 21) || (sign.getMonth() === 0 && sign.getDate() < 20)) {
-            return "Capricorn";
+function getSign(birthday) {
+    var birthday = new Date(birthday);
+    var month =birthday.getMonth() + 1;
+    var day = birthday.getDay();
+
+
+         if ((month == 1 && day <= 19) || (month == 12 && day >= 22)) {
+           return "capricorn";
+        } else if ((month == 1 && day <= 20) || (month == 2 && day >= 18)) {
+            return "aquarius";
+        } else if ((month == 2 && day <= 19) || (month == 3 && day >= 20)) {
+            return "pisces";
+        } else if ((month == 3 && day <= 21) || (month == 4 && day >= 19)) {
+            return "aries";
+        } else if ((month == 4 && day <= 20) || (month == 5 && day >= 20)) {
+            return "taurus";
+        } else if ((month == 5 && day <= 21) || (month == 6 && day >= 20)) {
+            return "gemini";
+        } else if ((month == 6 && day <= 21) || (month == 7 && day >= 22)) {
+            return "cancer";
+        } else if ((month == 7 && day <= 23) || (month == 8 && day >= 22)) {
+            return "leo";
+        } else if ((month == 8 && day <= 23) || (month == 9 && day >= 22)) {
+            return "virgo";
+        } else if ((month == 9 && day <= 23) || (month == 10 && day >= 22)) {
+            return "libra";
+        } else if ((month == 10 && day <= 23) || (month == 11 && day >= 22)) {
+            return "scorpio";
+        } else if ((month == 11 && day <= 22) || (month == 12 && day >= 21)) {
+            return "sagittarius";
         }
+
     }
-}
+document.getElementById('day').textContent = getSign
+button2.addEventListener('click', getSign);
 
 
 
-function display getSign() {
-
-        var input = document.getElementById('inputNumber').value;
-        var result = getSign(input);
-        if (resutlt == "Capricorn") {
-
-            document.getElementById('sign').textContent = "Your zodiac sign is Capricorn";
-        } else if (result == "Aquarius") {
-            document.getElementById('sign').textContent = "Your zodic sign is Aquarius";
-        } else if (result == "Pisces") {
-            document.getElementById('sign').textContent = "Your zodic sign is Pisces";
-        } else if (result == "Aries") {
-            document.getElementById('sign').textContent = "Your zodic sign is Aries";
-        } else if (result == "Taurus") {
-            document.getElementById('sign').textContent = "Your zodic sign is Taurus"
-
-        } else if (result == "Gemini") {
-            document.getElementById('sign').textContent = "Your zodic sign is Gemini";
-        } else if (result == "Cancer") {
-            document.getElementById('sign').textContent = "Your zodic sign is Cancer";
-        } else if (result == "Leo") {
-            document.getElementById('sign').textContent = "Your zodic sign is Leo";
-        } else if (result == "Virgo") {
-            document.getElementById('sign').textContent = "Your zodic sign is Virgo";
-        } else if (result == "Libra") {
-            document.getElementById('sign').textContent = "Your zodic sign is Libra";
-        } else if (result == "Scorpio") {
-            document.getElementById('sign').textContent = "Your zodic sign is Scorpio";
-        } else if (result == "Sagittarius") {
-            document.getElementById('sign').textContent = "Your zodic sign is Sagittarius";
-        }
-button.addEventListener('click', displayGetSign);
