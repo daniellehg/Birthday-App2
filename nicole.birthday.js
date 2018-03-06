@@ -1,4 +1,8 @@
 var button2 = document.getElementById('GetMySign');
+button.addEventListener('click', displayGetSign);var button2 = document.getElementById('findSign');
+button2.addEventListener('click', () => {
+    document.getElementById('output').textContent = getSign()
+});
 
 function getSign() {
     var birth = new Date(birthday);
@@ -69,4 +73,4 @@ function display getSign() {
         } else if (result == "Sagittarius") {
             document.getElementById('sign').textContent = "Your zodic sign is Sagittarius";
         }
-button.addEventListener('click', displayGetSign);
+button.addEventListener('click', displayGetSign);var button1 =
