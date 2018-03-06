@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var button = document.getElementById('getSign');
 
 
@@ -37,7 +37,7 @@ function getSign(birthday) {
     }
 document.getElementById('day').textContent = getSign
 button2.addEventListener('click', getSign);
-=======
+
 var button2 = document.getElementById('findAge');
 
 function getSign() {
@@ -72,10 +72,15 @@ function getSign() {
     } else if ((month() === 11 && day() > 21) || (month() === 0 && day() < 20)) {
         return "Capricorn";
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 
     document.getElementById('Sign').textContent = "Your zodiac sign is" + zodiac;
 }
 
+<<<<<<< HEAD
 function checkFormat() {
     var format = document.getElementById("birthday").value;
     var check1 = format.substring(2,3);
@@ -99,3 +104,37 @@ function checkFormat() {
 
 
 }
+=======
+
+
+
+/*    if (resutlt == "Capricorn") {
+
+        document.getElementById('sign').textContent = "Your zodiac sign is Capricorn";
+    } else if (result == "Aquarius") {
+        document.getElementById('sign').textContent = "Your zodic sign is Aquarius";
+    } else if (result == "Pisces") {
+        document.getElementById('sign').textContent = "Your zodic sign is Pisces";
+    } else if (result == "Aries") {
+        document.getElementById('sign').textContent = "Your zodic sign is Aries";
+    } else if (result == "Taurus") {
+        document.getElementById('sign').textContent = "Your zodic sign is Taurus"
+
+    } else if (result == "Gemini") {
+        document.getElementById('sign').textContent = "Your zodic sign is Gemini";
+    } else if (result == "Cancer") {
+        document.getElementById('sign').textContent = "Your zodic sign is Cancer";
+    } else if (result == "Leo") {
+        document.getElementById('sign').textContent = "Your zodic sign is Leo";
+    } else if (result == "Virgo") {
+        document.getElementById('sign').textContent = "Your zodic sign is Virgo";
+    } else if (result == "Libra") {
+        document.getElementById('sign').textContent = "Your zodic sign is Libra";
+    } else if (result == "Scorpio") {
+        document.getElementById('sign').textContent = "Your zodic sign is Scorpio";
+    } else if (result == "Sagittarius") {
+        document.getElementById('sign').textContent = "Your zodic sign is Sagittarius";
+    } */
+button.addEventListener('click', getSign);
+
+>>>>>>> origin/master
